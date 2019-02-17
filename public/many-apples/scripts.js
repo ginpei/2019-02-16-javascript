@@ -1,6 +1,7 @@
 // クラス定義
 class Apple {
   constructor(el) {
+    console.log('el', el);
     this.opened = false;
     this.el = el;
     this.elTop = el.querySelector('.apple-top');
@@ -27,6 +28,7 @@ class Apple {
 
 // クラスを使ってオブジェクト作成
 const elApple1 = document.querySelector('#apple1');
+console.log('elApple1', elApple1);
 const apple1 = new Apple(elApple1);
 
 const apple2 = new Apple(document.querySelector('#apple2'));
